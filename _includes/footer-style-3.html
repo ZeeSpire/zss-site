@@ -1,0 +1,25 @@
+</div>
+</body>
+</main>
+<footer class="footer mt-auto">
+    <div style="background-color: #000000;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-light fw-normal lh-lg text-muted text-decoration-none">
+                    © 2021 WeInspire Tech
+                </div>
+                <div class="col-6 text-end fw-normal lh-lg text-muted text-decoration-none">
+                    {% if site.show-theme-watermark %}Made with <a class="text-decoration-none text-muted" href="http://zeespire.com">zss one</a>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+{% if page.type == 'post' %}
+<script src="/assets/js/fslightbox.js"></script>
+{% if site.enable-pinterest-on-image-hover %}
+<script async defer data-pin-hover="true" data-pin-lang="en" src="//assets.pinterest.com/js/pinit.js"></script>
+{% endif %}
+{% endif %}
+</html>

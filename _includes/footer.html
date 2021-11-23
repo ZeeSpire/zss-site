@@ -1,0 +1,111 @@
+</div>
+</body>
+</main>
+<footer class="footer mt-auto">
+    <div class="container">
+        <div class="row pt-2 pb-2">
+            <div class="col">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="text-uppercase fw-normal lh-lg text-muted text-decoration-none"><i class="bi bi-arrow-left-circle"></i>Older posts</a>
+                {% endif %}
+            </div>
+            <div class="col text-end">
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="text-uppercase fw-normal lh-lg text-muted text-decoration-none">Newer posts<i class="bi bi-arrow-right-circle"></i></a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #{{ site.footer-color }};">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="footer-column col-sm-12 col-md-12 col-lg-4">
+                    <div class="text-line-container fw-normal text-muted">
+                        <span style="font-family: 'Italianno', cursive; background:#{{ site.footer-color }}; padding:0 10px; ">About</span>
+                    </div>
+                    <div class="text-center fw-lighter">
+                        <figure>
+                            <blockquote class="blockquote">
+                              <p>“It is not enough for code to work.”</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Uncle Bob Martin
+                            </figcaption>
+                          </figure>
+                        <em></em>
+                        
+                    </div>
+                </div>
+                <div class="footer-column col-sm-12 col-md-12 col-lg-4">
+                    <div class="text-line-container fw-normal text-muted">
+                        <span style="font-family: 'Italianno', cursive; background:#{{ site.footer-color }}; padding:0 10px; ">Social</span>
+                    </div>
+                    <div class="container">
+                        <div class="row mb-3">
+                            {% if site.youtube %}
+                            <div class="col text-center">
+                                <a class="text-secondary" href="{{ site.youtube }}" target="_blank"><img src="/assets/css/icons/youtube.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                            </div>
+                            {% endif %}
+                            {% if site.medium %}
+                            <div class="col text-center"><a class="text-secondary" href="{{ site.medium }}" target="_blank"> <img src="/assets/css/icons/medium.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                            </div>
+                            {% endif %}
+                            {% if site.facebook %}
+                            <div class="col text-center">
+                                <a class="text-secondary" href="{{ site.facebook }}" target="_blank"> <img src="/assets/css/icons/facebook.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="row">
+                            {% if site.tiktok %}
+                            <div class="col text-center">
+                                <a class="text-secondary" href="{{ site.tiktok }}" target="_blank"> <img src="/assets/css/icons/tiktok.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                            </div>
+                            {% endif %}
+                            {% if site.instagram %}
+                            <div class="col text-center">
+                                <a class="text-secondary" href="{{ site.instagram }}" target="_blank"><img src="/assets/css/icons/instagram.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                            </div>
+                            {% endif %}
+                            {% if site.pinterest %}
+                            <div class="col text-center">
+                                <a class="text-secondary" href="{{ site.pinterest }}" target="_blank"> <img src="/assets/css/icons/pinterest.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column col-sm-12 col-md-12 col-lg-4">
+                    <div class="text-line-container fw-normal text-muted">
+                        <span style="font-family: 'Italianno', cursive; background:#{{ site.footer-color }}; padding:0 10px; ">Search</span>
+                    </div>
+                    <div>
+                        {% include search-lunr.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #000000;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 text-light fw-normal lh-lg text-muted text-decoration-none">
+                        © 2021 WeInspire Tech
+                    </div>
+                    <div class="col-6 text-end fw-normal lh-lg text-muted text-decoration-none">
+                        {% if site.show-theme-watermark %}Made with <a class="text-decoration-none text-muted" href="http://zeespire.com">zss one</a>{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+{% if page.type == 'post' %}
+<script src="/assets/js/fslightbox.js"></script>
+{% if site.enable-pinterest-on-image-hover %}
+<script async defer data-pin-hover="true" data-pin-lang="en" src="//assets.pinterest.com/js/pinit.js"></script>
+{% endif %}
+{% endif %}
+</html>

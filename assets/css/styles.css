@@ -1,0 +1,131 @@
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.post-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card {
+    border: 0px;
+}
+
+.card-text {
+    color: black !important;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    height: 8rem;
+}
+
+@media (min-width: 1400px) {
+    .container { 
+        max-width: 1140px;
+    }
+}
+
+.card-img-top {
+    height: 350px; 
+    object-fit: cover;
+}
+
+.img-thumbnail {
+    border: 0;
+}
+
+@media (min-width: 1200px) {
+    .post-gallery-image {
+        height: 360px; 
+        object-fit: cover;
+    }
+}
+
+.text-line-container {
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em; 
+    margin: 10px 0 20px;
+    font-size: 2rem;
+}
+
+.modal-dialog {
+    max-height: 500px;
+}
+
+.no-style-button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.custom-form-control {
+        width: 90%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        
+        background-clip: padding-box;
+        border: 1px solid #664d03;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@media (max-width: 960px) {
+    .footer-column {
+        margin-bottom: 30px;
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+.homestyle-2-text {
+    color: #4d4d4d !important;
+    text-decoration: none;
+}
+
+.homestyle-3-text {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+code {
+	font-size: 11px;
+	
+}
+
+pre {
+	padding: 10px 10px 10px 10px;
+	line-height: 1.4;
+	
+}
+
+.img-500 {
+    max-width: 500px !important;
+}
+
+.img-600 {
+    max-width: 600px !important;
+}
+
+.img-700 {
+    max-width: 700px !important;
+}

@@ -1,0 +1,23 @@
+## Base Redirects created with https://www.danielmorell.com/tools/htaccess/redirect-generator ##
+
+# Turn on Rewrite Engine
+RewriteEngine On
+
+# Remove trailing slash from non-filepath urls
+RewriteCond %{REQUEST_URI} /(.+)/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ https://www.zeespire.com/%1 [R=301,L]
+
+# Include trailing slash on directory 
+RewriteCond %{REQUEST_URI} !(.+)/$
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+)$ https://www.zeespire.com/$1/ [R=301,L]
+
+# Force HTTPS and WWW 
+RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
+RewriteCond %{HTTPS} off  
+RewriteRule ^(.*)$ https://www.zeespire.com/$1 [R=301,L]
+
+# Error redirect
+ErrorDocument 404 /404.html

@@ -1,0 +1,79 @@
+<script src="/assets/js/lunr.js"></script>
+
+<script>
+{% assign counter = 0 %}
+var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }, {% endif %}{% endfor %}{% for page in site.without-plugin %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }, {% endfor %}{% for page in site.posts %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('body')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+
+function lunr_search(term) {
+    if(term) {
+        document.getElementById('search-title').innerHTML = "Search results for '" + term + "'";
+        var results = idx.search(term);
+        if(results.length > 0){
+            document.querySelectorAll('#lunrsearchresults')[0].innerHTML = "";
+            for (var i = 0; i < results.length; i++) {
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#lunrsearchresults')[0].innerHTML = document.querySelectorAll('#lunrsearchresults')[0].innerHTML + 
+                "<p class='text-start'><a class='text-decoration-none text-dark ' href='" + url + "'><span class='fs-4'>" + title + "</span><br /><span>"+ body +"</span></p>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults')[0].innerHTML = "No results found...";
+        }
+    } else {
+        document.getElementById('search-title').innerHTML = "";
+        document.querySelectorAll('#lunrsearchresults')[0].innerHTML = "No results found..."
+    }
+    return false;
+}
+</script>
+
+  
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);" data-toggle="modal" data-target="#exampleModal">
+    <input type="text" id="lunrsearch" name="q" class= "custom-form-control" style="background-color: #{{ site.footer-color }};" maxlength="255" value="" placeholder="Search ..." />
+    <button type="submit" class="no-style-button"data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-search"></i></button>
+</form>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <span id="search-title"></span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="lunrsearchresults">
+              
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+</div>

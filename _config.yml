@@ -1,0 +1,78 @@
+
+# General settings
+title: "ZeeSpire Software Solutions"
+email: office@zeespire.com
+description: "Top notch software solutions"
+keywords: "software, java, development, coding"
+url: "https://www.zeespire.com"
+permalink: /:title/
+logo: '/assets/images/logo-homepage-style-3.png'
+logo-height: 236
+logo-width: 260
+show-author-on-posts: true # true or false, just for homepage-style-1 and homepage-style-2 
+body-background-color: E74E35 # just for homepage-style-3
+
+# Social platforms, just for homepage-style-1 and homepage-style-2 
+youtube: https://www.youtube.com/channel/UCdwPRvOY4eHJD-sHdf9FkAw # leave empty if not applicable
+medium: https://ngvoicu.medium.com/ # leave empty if not applicable
+instagram: # leave empty if not applicable
+facebook: # leave empty if not applicable
+tiktok: # leave empty if not applicable
+
+# Show posts date on homepage
+show-posts-date: true # true or false, just for homepage-style-1 and homepage-style-2 
+
+# Pinterest settings, just for homepage-style-1 and homepage-style-2 
+enable-pinterest-on-image-hover: false # true or false
+pinterest-site-key: # leave empty if not applicable
+pinterest: # leave empty if not applicable
+
+# Footer settings
+footer-color: cbdbe8 # just for homepage-style-1 and homepage-style-2 
+show-theme-watermark: true # true or false
+
+# Track traffic (choose between the two, we can't set both)
+google-tag-manager-id: 
+google-analytics-id: 
+
+# Pagination settings, just for homepage-style-1 and homepage-style-2 
+paginate: 9
+paginate_path: "/:num/"
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-minifier
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - logo-psd/
+  - .vscode
+  - clean.bat
+  - build.bat
+  - git-push.bat
+  - develop.bat
+  - README.md
+  
