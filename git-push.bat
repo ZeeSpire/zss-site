@@ -4,5 +4,5 @@ call ./clean.bat
 ECHO =============== Commit - Push to master ===============
 git add .
 git commit -m "Update"
-git push -u origin master
+git push
 ECHO =============== Finished ===============

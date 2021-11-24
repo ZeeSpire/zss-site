@@ -7,8 +7,8 @@ keywords: "software, java, development, coding"
 url: "https://www.zeespire.com"
 permalink: /:title/
 logo: '/assets/images/logo-homepage-style-3.png'
-logo-height: 236
-logo-width: 260
+logo-height: 220
+logo-width: 220
 show-author-on-posts: true # true or false, just for homepage-style-1 and homepage-style-2 
 body-background-color: E74E35 # just for homepage-style-3
 
