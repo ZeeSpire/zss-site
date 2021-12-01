@@ -65,10 +65,10 @@
   {% endif %}
 
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.url }}/site.webmanifest">
 
   <!-- google fonts -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -77,13 +77,13 @@
   </noscript>
 
   <!-- boostrap -->
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.min.css">
 
   <!-- code highlight -->
-  <link rel="stylesheet" href="/assets/css/pygments.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/pygments.css">
 
   <!-- custom styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
 
   <!-- Pinterest verify -->
   {% if site.pinterest-site-key %}
@@ -103,6 +103,6 @@
     <div class="container">
       <div class="row mb-4">
         <div class="col text-center">
-          <img data-pin-no-hover="true" style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;" src="{{ site.logo }}" alt="{{ site.title }}" /></a>
+          <img data-pin-no-hover="true" style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;" src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>
         </div>
       </div>

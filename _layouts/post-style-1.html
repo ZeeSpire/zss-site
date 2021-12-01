@@ -17,14 +17,13 @@
 {% if page.featured-image-top %}
 <div class="row pt-4">
     <div class="col">
-        <a href="{{ page.featured-image }}" data-fslightbox="gallery">
-            <img src="{{ page.featured-image-top }}" alt="{{ page.title }}" 
+        <a href="{{ site.url }}{{ page.featured-image }}" data-fslightbox="gallery">
+            <img src="{{ site.url }}{{ page.featured-image-top }}" alt="{{ page.title }}" 
                 {% if page.featured-image-style == "full-width" %}
-                class="img-fluid img-thumbnail mx-auto d-block mb-3" style="width: 100%;"
+                class="img-fluid img-thumbnail mx-auto d-block mb-3"
                 {% endif %}
                 {% if page.featured-image-style == "centered" %}
                 class="img-fluid img-thumbnail rounded mx-auto d-block pb-3" 
-                style="max-width: 50%;"
                 {% endif %}
             />
         </a>

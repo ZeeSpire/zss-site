@@ -6,12 +6,12 @@
         <div class="row pt-2 pb-2">
             <div class="col">
                 {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}" class="text-uppercase fw-normal lh-lg text-muted text-decoration-none"><i class="bi bi-arrow-left-circle"></i>Older posts</a>
+                <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="text-uppercase fw-normal lh-lg text-muted text-decoration-none"><i class="bi bi-arrow-left-circle"></i>Older posts</a>
                 {% endif %}
             </div>
             <div class="col text-end">
                 {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}" class="text-uppercase fw-normal lh-lg text-muted text-decoration-none">Newer posts<i class="bi bi-arrow-right-circle"></i></a>
+                <a href="{{ site.url }}{{ paginator.next_page_path }}" class="text-uppercase fw-normal lh-lg text-muted text-decoration-none">Newer posts<i class="bi bi-arrow-right-circle"></i></a>
                 {% endif %}
             </div>
         </div>
@@ -45,33 +45,33 @@
                         <div class="row mb-3">
                             {% if site.youtube %}
                             <div class="col text-center">
-                                <a class="text-secondary" href="{{ site.youtube }}" target="_blank"><img src="/assets/css/icons/youtube.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                                <a class="text-secondary" href="{{ site.youtube }}" target="_blank"><img src="{{ site.url }}/assets/css/icons/youtube.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
                             </div>
                             {% endif %}
                             {% if site.medium %}
-                            <div class="col text-center"><a class="text-secondary" href="{{ site.medium }}" target="_blank"> <img src="/assets/css/icons/medium.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                            <div class="col text-center"><a class="text-secondary" href="{{ site.medium }}" target="_blank"> <img src="{{ site.url }}/assets/css/icons/medium.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
                             </div>
                             {% endif %}
                             {% if site.facebook %}
                             <div class="col text-center">
-                                <a class="text-secondary" href="{{ site.facebook }}" target="_blank"> <img src="/assets/css/icons/facebook.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                                <a class="text-secondary" href="{{ site.facebook }}" target="_blank"> <img src="{{ site.url }}/assets/css/icons/facebook.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
                             </div>
                             {% endif %}
                         </div>
                         <div class="row">
                             {% if site.tiktok %}
                             <div class="col text-center">
-                                <a class="text-secondary" href="{{ site.tiktok }}" target="_blank"> <img src="/assets/css/icons/tiktok.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                                <a class="text-secondary" href="{{ site.tiktok }}" target="_blank"> <img src="{{ site.url }}/assets/css/icons/tiktok.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
                             </div>
                             {% endif %}
                             {% if site.instagram %}
                             <div class="col text-center">
-                                <a class="text-secondary" href="{{ site.instagram }}" target="_blank"><img src="/assets/css/icons/instagram.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                                <a class="text-secondary" href="{{ site.instagram }}" target="_blank"><img src="{{ site.url }}/assets/css/icons/instagram.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
                             </div>
                             {% endif %}
                             {% if site.pinterest %}
                             <div class="col text-center">
-                                <a class="text-secondary" href="{{ site.pinterest }}" target="_blank"> <img src="/assets/css/icons/pinterest.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
+                                <a class="text-secondary" href="{{ site.pinterest }}" target="_blank"> <img src="{{ site.url }}/assets/css/icons/pinterest.svg" style="opacity:0.5; width:25px; height:25px;" alt="facebook"></a>
                             </div>
                             {% endif %}
                         </div>
@@ -101,9 +101,9 @@
         </div>
     </div>
 </footer>
-<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="{{ site.url }}/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
 {% if page.type == 'post' %}
-<script src="/assets/js/fslightbox.js"></script>
+<script src="{{ site.url }}/assets/js/fslightbox.js"></script>
 {% if site.enable-pinterest-on-image-hover %}
 <script async defer data-pin-hover="true" data-pin-lang="en" src="//assets.pinterest.com/js/pinit.js"></script>
 {% endif %}
