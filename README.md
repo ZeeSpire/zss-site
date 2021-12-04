@@ -50,6 +50,7 @@
 <img src="assets/css/icons/support.png" alt="check" width="16"/><font size="5"> Documentation</font>
 
 ### Initial settings 
+    - Install Jekyll https://jekyllrb.com/docs/installation/ 
     - Open _config.yml and customize settings. 
     - Replace the logo in ./assets/images and size in _config.yml 
     - Replace favicons in root folder and site.webmanifest. https://favicon.io/favicon-converter/ 
