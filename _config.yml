@@ -6,9 +6,9 @@ description: "Top notch software solutions"
 keywords: "software, java, development, coding"
 url: "https://www.zeespire.com"
 permalink: /:title/
-logo: '/assets/images/logo-homepage-style-3.png'
-logo-height: 220
-logo-width: 220
+logo: '/assets/images/logo.png'
+logo-height: 222
+logo-width: 360
 show-author-on-posts: true # true or false, just for homepage-style-1 and homepage-style-2 
 body-background-color: E74E35 # just for homepage-style-3
 
