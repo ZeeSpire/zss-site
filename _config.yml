@@ -3,7 +3,7 @@
 title: "ZeeSpire Software Solutions"
 email: office@zeespire.com
 description: "Top notch software solutions"
-keywords: "software, java, development, coding"
+keywords: "software, java, development, coding, jekyll, design, themes"
 url: "https://www.zeespire.com"
 permalink: /:title/
 logo: '/assets/images/logo.png'
@@ -33,7 +33,7 @@ show-theme-watermark: true # true or false
 
 # Track traffic (choose between the two, we can't set both)
 google-tag-manager-id: 
-google-analytics-id: 
+google-analytics-id: G-CHQG3MMC1S
 
 # Pagination settings, just for homepage-style-1 and homepage-style-2 
 paginate: 9
