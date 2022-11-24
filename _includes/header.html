@@ -65,10 +65,10 @@
   {% endif %}
 
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
-  <link rel="manifest" href="{{ site.url }}/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- google fonts -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -77,13 +77,13 @@
   </noscript>
 
   <!-- boostrap -->
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
   <!-- code highlight -->
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/pygments.css">
+  <link rel="stylesheet" href="/assets/css/pygments.css">
 
   <!-- custom styles -->
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Pinterest verify -->
   {% if site.pinterest-site-key %}
@@ -102,20 +102,20 @@
     {% endif %}
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ site.url }}/"><img data-pin-no-hover="true" style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;" src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>
+        <a class="navbar-brand" href="/"><img data-pin-no-hover="true" style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;" src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.url }}/">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.zeespire.com">ZeeSpire.com</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.url }}/contact">Contact</a>
+              <a class="nav-link" href="/contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -123,32 +123,32 @@
           <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
             {% if site.youtube %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.youtube }}" target="_blank"><img src="{{ site.url }}/assets/css/icons/youtube.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
+              <a class="nav-link" href="{{ site.youtube }}" target="_blank"><img src="/assets/css/icons/youtube.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
             </li>
             {% endif %}
             {% if site.instagram %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.instagram }}" target="_blank"><img src="{{ site.url }}/assets/css/icons/instagram.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
+              <a class="nav-link" href="{{ site.instagram }}" target="_blank"><img src="/assets/css/icons/instagram.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
             </li>
             {% endif %}
             {% if site.facebook %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.facebook }}" target="_blank"> <img src="{{ site.url }}/assets/css/icons/facebook.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
+              <a class="nav-link" href="{{ site.facebook }}" target="_blank"> <img src="/assets/css/icons/facebook.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
             </li>
             {% endif %}
             {% if site.tiktok %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.tiktok }}" target="_blank"><img src="{{ site.url }}/assets/css/icons/tiktok.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
+              <a class="nav-link" href="{{ site.tiktok }}" target="_blank"><img src="/assets/css/icons/tiktok.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
             </li>
             {% endif %}
             {% if site.medium %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.medium }}" target="_blank"><img src="{{ site.url }}/assets/css/icons/medium.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></i></a>
+              <a class="nav-link" href="{{ site.medium }}" target="_blank"><img src="/assets/css/icons/medium.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></i></a>
             </li>
             {% endif %}
             {% if site.pinterest %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.pinterest }}" target="_blank"><img src="{{ site.url }}/assets/css/icons/pinterest.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
+              <a class="nav-link" href="{{ site.pinterest }}" target="_blank"><img src="/assets/css/icons/pinterest.svg" style="opacity:0.6; height:16px; width:16px;" alt="facebook"></a>
             </li>
             {% endif %}
           </ul>
