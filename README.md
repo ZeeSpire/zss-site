@@ -10,7 +10,7 @@
 
 <img src="assets/css/icons/check.png" alt="check" width="32"/><font size="5">Step by step documentation</font>
 
-<img src="assets/css/icons/support.png" alt="check" width="16"/><font size="5"> Detailed features</font>
+<img src="assets/css/icons/support.png" alt="check" width="16"/><font size="5"> Detailed features</font>  
 
     - 3 homepage designs which you can choose from 
     - Easily create and use your own with Bootstrap designs 
