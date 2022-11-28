@@ -93,16 +93,10 @@
 
 <main class="flex-shrink-0">
 
-  <body style="background: url(/assets/images/bg.jpg) no-repeat center center fixed; background-size: cover; text-decoration: none;" class="d-flex flex-column h-100">
+  <body style="background-color: #000000; text-decoration: none;" class="d-flex flex-column h-100">
     <!-- Google Tag Manager (noscript) -->
     {% if jekyll.environment == "production" %}
     {% if site.google-tag-manager-id %}
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google-tag-manager-id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% endif %}
     {% endif %}
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col text-center">
-          <img data-pin-no-hover="true" style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;" src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>
-        </div>
-      </div>
