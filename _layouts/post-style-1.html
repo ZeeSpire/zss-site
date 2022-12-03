@@ -1,5 +1,18 @@
-{% include header.html %}
-
+{% include header-style-3-white.html %}
+<div style="background: url(/assets/images/bg.jpg) no-repeat center center fixed; background-size: cover;">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <a href="/"><img data-pin-no-hover="true"
+                    style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;"
+                    src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4"></div>
+        <div class="row mt-4 mb-4"></div>
+    </div>
+</div>
+<div class="container">
 <div class="row">
     <div class="col">
         <h2 class="post-title text-center pt-4">{{ page.title }}</h2>
@@ -36,5 +49,5 @@
         {{ content }}
     </div>
 </div>
-
-{% include footer.html %}
+</div>
+{% include footer-style-3.html %}
