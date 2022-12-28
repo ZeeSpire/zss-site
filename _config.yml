@@ -36,7 +36,7 @@ google-tag-manager-id:
 google-analytics-id: G-CHQG3MMC1S
 
 # Pagination settings, just for homepage-style-1 and homepage-style-2 
-paginate: 9
+paginate: 100
 paginate_path: "/:num/"
 
 # Build settings

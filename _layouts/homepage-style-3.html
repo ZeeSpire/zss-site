@@ -4,8 +4,8 @@
         <div class="row mb-4">
             <div class="col text-center">
                 <a href="/"><img data-pin-no-hover="true"
-                    style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;"
-                    src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>
+                        style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;"
+                        src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>
             </div>
         </div>
         <div class="row mt-4 mb-4"></div>
@@ -13,15 +13,24 @@
     </div>
 </div>
 <div class="container">
-    <div class="row justify-content-md-center mt-4 mb-4">
-        <p class="lead" style="color: #ffffff;">Tech articles</p>
-        {% for post in paginator.posts %}
-        <div class="col-sm-12 col-md-12 col-lg-12 " style="display: flex;">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-lg-6 mt-4 mb-4">
+            <p class="lead" style="color: #ffffff;">Tech articles</p>
+            {% for post in paginator.posts %}
             <div>
-                <a class="fw-light text-decoration-none" style="font-size: small; color: #ffffff;" href="{{ post.url }}">{{ post.title }}</a>
+                <a class="fw-light text-decoration-none" style="font-size: small; color: #ffffff;"
+                    href="{{ post.url }}">{{ post.title }}</a>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        <div class="col-sm-12 col-lg-6 mt-4 mb-4 text-end ">
+            <p class="lead" style="color: #ffffff;">Our projects</p>
+            <a href="https://www.afkology.com/"><img src="/assets/images/afk-logo.png" width="150px"></a>
+            <a href="https://www.worriless.life/"><img src="/assets/images/worriless-logo.png" width="150px"></a>
+            <br/> <br/>
+            <p class="lead" style="color: #ffffff;">Our clients and partners</p>
+            <a href="https://www.rws.com/"><img src="/assets/images/rws-logo.png" width="150px"></a>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -51,6 +60,22 @@
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 text-center mt-4 mb-4">
             <p class="lead" style="color: #ffffff;">Latest news</p>
+            <div style="display: flex;">
+                <div style="min-width: 80px;">
+                    <span class="fw-light" style="font-size: small; color: #ffffff;">28 Dec 2022</span>
+                </div>
+                <div>
+                    <span class="homestyle-3-text fw-light" style="font-size: small;">worriless.life is live</span>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="min-width: 80px;">
+                    <span class="fw-light" style="font-size: small; color: #ffffff;">28 Dec 2022</span>
+                </div>
+                <div>
+                    <span class="homestyle-3-text fw-light" style="font-size: small;">Worriless for Android is live</span>
+                </div>
+            </div>
             <div style="display: flex;">
                 <div style="min-width: 80px;">
                     <span class="fw-light" style="font-size: small; color: #ffffff;">25 Nov 2021</span>
