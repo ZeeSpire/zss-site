@@ -31,5 +31,3 @@ Here are the yields (36% APR — 662% APR) provided by the [Maiar Exchange](http
 
 You can mostly earn new MEX tokens which have a great long-term potential and can be exchanged into [eGLD](https://coinmarketcap.com/currencies/elrond-egld/) or the impressive new token [RIDE](https://coinmarketcap.com/currencies/holoride/).
 Join us and make the tokens great again! [Get Maiar APP](https://get.maiar.com/referral/0xx4e6yb4d).
-
-{% include adsense.html %}

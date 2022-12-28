@@ -27,10 +27,6 @@ Most of the time software and technology make our life easier, especially in tim
 
 Java Brains has a nice video on the Log4Shell issue: 
 
-{% include adsense.html %}
-
  <div class="ratio ratio-16x9 mb-3">
     <iframe src="https://www.youtube.com/embed/uyq8yxWO1ls" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-{% include adsense.html %}

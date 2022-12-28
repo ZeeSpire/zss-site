@@ -48,22 +48,6 @@
   <meta itemprop="publisher" content="{{ site.title }}" />
   {% endif %}
 
-  <!-- Google Tag Manager & Google Analytics -->
-  {% if jekyll.environment == "production" %}
-  {% if site.google-tag-manager-id %}
-  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', '{{ site.google-tag-manager-id }}');</script>
-  {% endif %}
-  {% if site.google-analytics-id %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-analytics-id }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', '{{ site.google-analytics-id }}');
-  </script>
-  {% endif %}
-  {% endif %}
-
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -94,12 +78,6 @@
 <main class="flex-shrink-0">
 
   <body class="d-flex flex-column h-100">
-    <!-- Google Tag Manager (noscript) -->
-    {% if jekyll.environment == "production" %}
-    {% if site.google-tag-manager-id %}
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google-tag-manager-id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    {% endif %}
-    {% endif %}
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/"><img data-pin-no-hover="true" style="margin-top: 20px; margin-bottom: 20px; width:{{ site.logo-width }}px; height:{{ site.logo-height }}px;" src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" /></a>

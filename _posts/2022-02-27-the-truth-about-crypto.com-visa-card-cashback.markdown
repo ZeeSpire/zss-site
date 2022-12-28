@@ -36,8 +36,4 @@ Here are some of the explanations they gave me:
 > On Thu, Feb 24, 2022 at 06:38 PM, "Lucas" wrote:
 > So from what I am able to see, you should have the ability to receive more cash back at the end of this calendar month
 
-
 [crypto.com](https://crypto.com/app/4namc6eb3z) account still offers a lot of benefits, 10% interest on CRO, 12% interest on USDC, and maybe more cashback starting next month. But everyone should know **there is a limit to the amount of cashback you can earn**, even if they don't publish it.
-
-
-{% include adsense.html %}

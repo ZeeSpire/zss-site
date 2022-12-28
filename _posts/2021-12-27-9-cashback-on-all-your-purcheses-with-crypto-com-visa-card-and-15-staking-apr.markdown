@@ -34,5 +34,3 @@ You can even use their Visa card to pay with local currencies. For example, I to
 Another way to benefit even more from their card is to add it to your [Curve app](https://www.curve.com/join#DWGL8P6E) and receive 1% CURVE cashback as well on top of CRYPTO.com's cashback. That adds up to 9% cashback. You can also get a 5 USD reward if you sign up for [Curve](https://www.curve.com/join#DWGL8P6E).
 
 Update: You don't receive cashback on B2B platforms (like namecheap.com or stocks investments). Pay your groceries, your gifts, and personal items and you will benefit from the rewards after each transaction in a matter of seconds.
-
-{% include adsense.html %}
