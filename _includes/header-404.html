@@ -48,20 +48,16 @@
   <meta itemprop="publisher" content="{{ site.title }}" />
   {% endif %}
 
-  <!-- Google Tag Manager & Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   {% if jekyll.environment == "production" %}
-  {% if site.google-tag-manager-id %}
-  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', '{{ site.google-tag-manager-id }}');</script>
-  {% endif %}
-  {% if site.google-analytics-id %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-analytics-id }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHQG3MMC1S"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', '{{ site.google-analytics-id }}');
+
+    gtag('config', 'G-CHQG3MMC1S');
   </script>
-  {% endif %}
   {% endif %}
 
   <!-- favicon -->
@@ -84,22 +80,11 @@
 
   <!-- custom styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
-
-  <!-- Pinterest verify -->
-  {% if site.pinterest-site-key %}
-  <meta name="p:domain_verify" content="{{ site.pinterest-site-key }}" />
-  {% endif %}
 </head>
 
 <main class="flex-shrink-0">
 
   <body style="background-color: black;" class="d-flex flex-column h-100">
-    <!-- Google Tag Manager (noscript) -->
-    {% if jekyll.environment == "production" %}
-    {% if site.google-tag-manager-id %}
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google-tag-manager-id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    {% endif %}
-    {% endif %}
     <div class="container">
       <div class="row mb-4">
         <div class="col text-center">

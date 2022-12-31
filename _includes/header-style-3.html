@@ -69,9 +69,16 @@
   <!-- custom styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Pinterest verify -->
-  {% if site.pinterest-site-key %}
-  <meta name="p:domain_verify" content="{{ site.pinterest-site-key }}" />
+  <!-- Google tag (gtag.js) -->
+  {% if jekyll.environment == "production" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHQG3MMC1S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CHQG3MMC1S');
+  </script>
   {% endif %}
 </head>
 
